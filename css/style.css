@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px 180px 20px 180px;
+    padding: 0;
+    box-sizing: border-box;
+    background: #EAE7DC;
+}
+
+header {
+    box-shadow: 2px 2px 1px #888888;
+    margin: 12px 75px;
+    background: #EAE7DC;
+    background-image: url(../assets/lib.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    padding: 30px;
+    border-radius: 70px;
+    color: #E85A4F;
+    
+    text-align: center;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px 3px white;
+    font-weight: bold;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .container {
+    width: 800px;
+    box-shadow: 2px 2px 5px #888888;
+    border-radius: 100px;
+    margin: 16px;
+    background: #F5f2ee;
+    padding: 70px;
+    flex-grow: 1;
+    height: fit-content;
+}
+
+.wrapper .containerBuku {
+    width: 800px;
+    box-shadow: 2px 2px 5px #888888;
+    border-radius: 100px;
+    margin: 16px;
+    background: #F5f2ee;
+    padding: 70px;
+    flex-grow: 1;
+    height: fit-content;
+}
+
+
+.item {
+    border-radius: 50px;
+    margin-top: 16px;
+    padding: 12px 24px;
+    background: white;
+    background-image: url(../assets/lib.jpg);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    color: #EAE7DC;
+    
+    display: flex;
+    align-items: center;
+}
+
+.item > .inner h2 {
+    margin-bottom: 21px;
+    margin-left: 20px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.item > .inner p {
+    margin-top: -10px;
+    margin-left: 20px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.form {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    height: 450px;
+    border-radius: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bold;
+    color: rgb(109, 109, 109);
+}
+
+.shadow {
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+input[type=text]{
+    font-family: 'Montserrat', sans-serif;
+    background: white;
+    border: 2px solid #8E8D8A;
+    border-radius: 70px;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.btn-submit {
+    width: fit-content;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 70px;
+    padding: 12px 24px;
+    border: 2px solid #8E8D8A;
+    color: rgb(109, 109, 109);
+    font-size: 20px;
+    margin-top: auto;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background: #8E8D8A;
+    color: white;
+}
+
+input[type=text], .btn-submit:focus { 
+    outline: none;
+}
+
+.text-center {
+    text-align: left;
+    margin-left: 12px;
+    color: rgb(109, 109, 109);    
+}
+
+.form-title {
+    margin: auto 0;
+}
+
+.check-button {
+    width: 40px;
+    height: 40px;
+
+    background: url('../assets/unread.png');
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url('../assets/read.png');
+    background-size: contain;
+}
+
+.undo-button {
+    width: 40px;
+    height: 40px;
+
+    background: url('../assets/undo.png');
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background: url('../assets/undos.png');
+    background-size: contain;
+}
+
+.trash-button {
+    width: 40px;
+    height: 40px;
+
+    background: url('../assets/trash1.png');
+    background-size: contain;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover {
+    background: url('../assets/trash2.png');
+    background-size: contain;
+}
+
+.check-button:focus, .trash-button {
+    outline: none;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .wrapper {
+        margin-bottom: 200px;
+    }
+
+    .wrapper .container,.wrapper .containerBuku{
+        margin:0px 100px 50px 100px;
+    }
+
+    .list-item {
+        width: 90%;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
